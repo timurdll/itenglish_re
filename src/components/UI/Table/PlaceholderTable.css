@@ -1,0 +1,16 @@
+.placeholder-table {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.placeholder-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.placeholder-cell {
+  flex: 1;
+  padding: 8px;
+}

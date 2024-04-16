@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+.container {
+  // margin-top: 150px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   flex-wrap: wrap;
+  //   max-width: 1230px;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    max-width: 50rem;
+    z-index: 3;
+    // min-width: 500px;
+    h4 {
+      color: #010103;
+      font-size: 22px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 52px;
+      font-weight: 700;
+      color: $text-black;
+      line-height: 1.2;
+      margin-top: 1rem;
+      margin-bottom: 2.3rem;
+      span {
+        color: $primary-color;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: $text-gray;
+      margin-bottom: 4rem;
+    }
+    .buttons {
+      display: flex;
+      font-size: 16px;
+      gap: 2rem;
+    }
+  }
+  .image {
+    max-width: 650px;
+    width: 100vw;
+    height: auto;
+    // height: 100%;
+  }
+}

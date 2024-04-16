@@ -1,0 +1,71 @@
+@import "normalize.css";
+@import "./variables.scss";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-white;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 15px;
+    gap: 150px;
+    max-width: 1230px;
+    min-height: 95vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+
+// scroll bar ------
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $primary-color #ffffff;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: $primary-color;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: $primary-color;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: $primary-color-hover;
+}

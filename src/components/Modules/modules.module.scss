@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+
+.modules {
+  width: 100%;
+  // padding: 5.3rem 0;
+
+  h2 {
+    color: $primary-color;
+    font-size: $h2-size;
+    text-align: center;
+  }
+}

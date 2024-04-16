@@ -1,0 +1,16 @@
+.form {
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 0;
+  font-size: 16px !important;
+}
+
+.form > div {
+  margin-bottom: 2rem;
+}

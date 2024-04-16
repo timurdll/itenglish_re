@@ -1,0 +1,64 @@
+@import "../../variables.scss";
+.about {
+  display: flex;
+  flex-direction: column;
+  // padding: 5.3rem 0;
+  .title {
+    margin: 0 auto;
+    text-align: center;
+    color: $text-black;
+
+    h3 {
+      font-size: $h3-size;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: $h2-size;
+      margin: 1.3rem 0 3rem 0;
+    }
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 37px;
+    padding: 0 3px;
+
+    @media (max-width: 1021px) {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2rem;
+    }
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      margin-top: 1rem;
+    }
+
+    .box {
+      text-align: center;
+      padding: 1px 6px;
+
+      @media (max-width: 500px) {
+        padding: 1rem 1rem;
+      }
+
+      img {
+        width: 17rem;
+        height: auto;
+      }
+
+      h3 {
+        font-size: $h3-size;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: $p-size;
+        color: $text-gray;
+        line-height: 1.43;
+      }
+    }
+  }
+}

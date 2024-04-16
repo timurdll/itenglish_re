@@ -1,0 +1,10 @@
+.admin_panel {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .input_block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
